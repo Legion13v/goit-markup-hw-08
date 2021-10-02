@@ -6,13 +6,18 @@
   }
 }
 .main-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  font-size: 24px;
+  line-height: calc(28.18 / 24);
   color: var(--current-color);
-  margin-right: 93px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  @media screen and(min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30.52 / 26);
+  }
 }
 .header-logo {
   color: #000000;
@@ -20,6 +25,7 @@
 .header-navigation {
   display: flex;
   align-items: center;
+  margin-left: 93px;
 }
 .header-menu {
   display: flex;

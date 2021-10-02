@@ -4,12 +4,34 @@
   padding-bottom: 60px;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.tablet-wrap {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .address-box {
-  flex-grow: 1;
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    margin-right: 70px;
+  }
 }
 .footer-logo {
   color: var(--secondary-text-color);
@@ -20,7 +42,10 @@
 }
 .address__item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 .address__link {
@@ -45,6 +70,11 @@
   color: var(--secondary-text-color);
   margin-bottom: 20px;
 }
+.social-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 .socials-link-footer {
   display: block;
   padding: 12px;
@@ -65,19 +95,28 @@
 }
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .subscribe {
-  display: flex;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .subscribe__input {
   width: 358px;
   padding: 5px;
   color: rgba(255, 255, 255, 0.6);
   height: 50px;
-  margin-right: 12px;
+
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
@@ -89,6 +128,19 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
   }
 }
 .subscribe__button {
@@ -107,6 +159,10 @@
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .subscribe__icon {
   fill: var(--secondary-text-color);
