@@ -1,0 +1,23 @@
+.hero__btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--current-color);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+    background-color: #188ce8;
+  }
+}
