@@ -79,16 +79,27 @@
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
-  margin-right: 8.38px;
+  margin-right: 5px;
   border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and(min-width:1200px) {
+    margin-right: 8px;
+  }
 }
 .checkbox {
   &:checked + .checkbox-label > .checkbox-icon {
     background-color: var(--current-color);
     border: transparent;
+  }
+}
+.checkbox__text {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
   }
 }
 .checkbox-privacy {
