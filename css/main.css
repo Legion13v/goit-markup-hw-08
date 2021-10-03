@@ -816,10 +816,24 @@ img {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.filter-btn {
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__btn {
   font-weight: 500;
   font-size: 16px;
   height: 38px;
@@ -834,14 +848,20 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn:hover, .filter-btn:focus {
+.filter__btn:hover, .filter__btn:focus {
   color: var(--secondary-text-color);
   background-color: var(--current-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.filter-item:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
+  }
+}
+
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -852,33 +872,33 @@ img {
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
-.gallery > .gallery-item {
+.gallery > .gallery__item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
 
-.gallery-item:nth-child(3n) {
+.gallery__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.gallery-link {
+.gallery__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-link:hover, .gallery-link:focus {
+.gallery__link:hover, .gallery__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallery-title {
+.gallery__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
 
-.products-text {
+.products__text {
   position: absolute;
   font-size: 18px;
   line-height: 1.56;
@@ -893,18 +913,18 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-link:hover .products-text,
-.gallery-link:focus .products-text {
+.gallery__link:hover .products__text,
+.gallery__link:focus .products__text {
   transform: translateY(0%);
 }
 
-.gallery-text {
+.gallery__text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
 }
 
-.products-overlay {
+.products__overlay {
   position: relative;
   overflow: hidden;
 }
