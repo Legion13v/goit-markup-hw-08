@@ -983,6 +983,18 @@ img {
   border-left: 1px solid #eee;
 }
 
+@media screen and (max-width: 767px) {
+  .text-block {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .text-block {
+    height: 146px;
+  }
+}
+
 .backdrop {
   position: fixed;
   height: 100vh;

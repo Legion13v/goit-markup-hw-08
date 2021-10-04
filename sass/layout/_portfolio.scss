@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -35,7 +35,7 @@
   }
 }
 .filter__item {
-  @media screen and(max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
   &:not(:last-child) {
@@ -46,7 +46,7 @@
   padding: 0;
   margin: 0;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -55,12 +55,12 @@
 .gallery__item {
   margin-bottom: 30px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 3);
   }
 }
@@ -114,4 +114,8 @@
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    height: 146px;
+  }
 }
