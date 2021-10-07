@@ -18,8 +18,9 @@
   }
 }
 .clients__link {
-  display: block;
-  padding: 12px 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
